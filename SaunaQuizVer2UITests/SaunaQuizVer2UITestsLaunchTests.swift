@@ -2,8 +2,6 @@
 //  SaunaQuizVer2UITestsLaunchTests.swift
 //  SaunaQuizVer2UITests
 //
-//  Created by 菅原大輝 on 2025/05/06.
-//
 
 import XCTest
 

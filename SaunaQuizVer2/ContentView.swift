@@ -2,18 +2,21 @@
 //  ContentView.swift
 //  SaunaQuizVer2
 //
-//  Created by 菅原大輝 on 2025/05/06.
-//
 
 import SwiftUI
 
 struct ContentView: View {
+    @State var isShowingQuizView = false
+    
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+            Text("新サウナクイズ")
+            Button("スタート") {
+                isShowingQuizView = true
+            }
+            .fullScreenCover(isPresented: $isShowingQuizView) {
+                QuizView()
+            }
         }
         .padding()
     }

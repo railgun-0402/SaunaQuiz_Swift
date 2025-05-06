@@ -2,8 +2,6 @@
 //  SaunaQuizVer2Tests.swift
 //  SaunaQuizVer2Tests
 //
-//  Created by 菅原大輝 on 2025/05/06.
-//
 
 import Testing
 @testable import SaunaQuizVer2
