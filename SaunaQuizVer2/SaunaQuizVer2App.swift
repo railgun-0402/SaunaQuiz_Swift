@@ -9,7 +9,7 @@ import SwiftUI
 struct SaunaQuizVer2App: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            StartView()
         }
     }
 }
