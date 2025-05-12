@@ -66,7 +66,7 @@ struct QuizView: View {
             
             ForEach(quizItems[0].choices, id: \.self) { choice in
                 Button() {
-                    isShowingScoreView = true
+                    print("\(choice)を選択しました。")
                 } label: {
                     Text(choice)
                         .frame(maxWidth: .infinity)
