@@ -67,6 +67,14 @@ struct QuizView: View {
             ForEach(quizItems[0].choices, id: \.self) { choice in
                 Button() {
                     print("\(choice)を選択しました。")
+                    print("正解は\(quizItems[1].correctAnswer)でした。")
+                    
+                    if choice == quizItems[1].correctAnswer {
+                        print("正解です")
+                    } else {
+                        print("不正解です")
+                    }
+                    
                 } label: {
                     Text(choice)
                         .frame(maxWidth: .infinity)
